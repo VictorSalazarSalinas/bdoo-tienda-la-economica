@@ -50,7 +50,7 @@ def poblar():
     finalizar_venta(root, "V002")
 
     cerrar_base_datos(db, conn)
-    print("✅ Datos creados y guardados en ZODB. Cerrando conexion...\n")
+    
 
 def demostrar_persistencia():
     """Volver a abrir para demostrar que los datos siguen ahi."""
@@ -102,7 +102,3 @@ consulta_2_productos_precio_superior(30)
 consulta_3_productos_disponibles_o_limite(15)
 consulta_4_productos_por_proveedor("PROV001")
 consulta_5_total_ventas()
-
-print("\n" + "=" * 60)
-print("   CODIGO COMPLETO - LISTO PARA SUBIR A GITHUB")
-print("=" * 60)
