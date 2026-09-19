@@ -1,11 +1,46 @@
-# Sistema de Tienda - BDOO con Python y ZODB
+# Sistema de gestión de tienda BDOO
 
-Sistema desarrollado en Python para administrar una tienda utilizando una Base de Datos Orientada a Objetos (BDOO) con ZODB.
+## Descripción
 
-## Requisitos
+Sistema desarrollado en Python para administrar una tienda utilizando una Base de Datos Orientada a Objetos (BDOO) con ZODB. Permite gestionar productos, clientes, proveedores y ventas, con consultas y control de inventario.
 
-- Python 3.10 o superior
+## Objetivo
+
+Resolver los problemas de administración de una tienda pequeña que actualmente lleva sus registros en hojas de cálculo y papel, migrando a un sistema con persistencia de datos y consultas automatizadas.
+
+## Tecnologías utilizadas
+
+- Python
 - ZODB
+- Git
+
+## Estructura del proyecto
+
+```
+tienda_bdoo/
+├── modelos/           # Clases del dominio
+│   ├── categoria.py
+│   ├── cliente.py
+│   ├── producto.py
+│   ├── proveedor.py
+│   └── venta.py
+├── persistencia/      # Conexión con ZODB
+├── servicios/         # Lógica de negocio
+├── consultas/         # Consultas del sistema
+├── main.py            # Punto de entrada
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+## Funcionalidades
+
+- Gestión de productos (CRUD)
+- Gestión de clientes
+- Gestión de proveedores
+- Registro de ventas
+- Consultas de disponibilidad, stock, ventas por cliente, productos más vendidos
+- Control de inventario
 
 ## Instalación
 
@@ -19,29 +54,10 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## Estructura del proyecto
+## Integrantes
 
-```
-tienda_bdoo/
-├── modelos/           # Clases del dominio
-│   ├── producto.py
-│   ├── cliente.py
-│   ├── proveedor.py
-│   ├── categoria.py
-│   └── venta.py
-├── persistencia/      # Conexión con ZODB
-├── servicios/         # Lógica de negocio
-├── consultas/         # Consultas del sistema
-├── main.py            # Punto de entrada
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
+- Víctor Miguel Salazar Salinas
 
-## Funcionalidades
+## Versión
 
-- CRUD de productos
-- Registro de ventas
-- Control de inventario
-- Consultas: disponibilidad, stock bajo, ventas por cliente, productos más vendidos
-- Persistencia de datos con ZODB
+v1.0.0 — Versión inicial del proyecto.
